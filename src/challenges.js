@@ -15,9 +15,10 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(arrayDeStrings) {
+  let ultimoItem = arrayDeStrings.pop();
+  let primeiroItem = arrayDeStrings.shift();
+  return ultimoItem + primeiroItem;
 
 // Desafio 5
 function footballPoints() {
