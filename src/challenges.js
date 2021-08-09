@@ -18,7 +18,8 @@ function splitSentence(frase) {
 function concatName(arrayDeStrings) {
   let ultimoItem = arrayDeStrings.pop();
   let primeiroItem = arrayDeStrings.shift();
-  return ultimoItem + primeiroItem;
+  return `${ultimoItem}, ${primeiroItem}`;
+}
 
 // Desafio 5
 function footballPoints() {
