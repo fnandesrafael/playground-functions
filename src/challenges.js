@@ -34,7 +34,7 @@ function highestCount(numerosArray) {
   let maiorNumero = numerosArray[0];
   let numeroRepete = 0;
 
-  for (let i = 0; i < numerosArray.lenght; i += 1) {
+  for (let i = 0; i < numerosArray.length; i += 1) {
     if (numerosArray[i] > maiorNumero) {
       maiorNumero = numerosArray[i];
       numeroRepete = 0;
