@@ -30,7 +30,6 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-// eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(numerosArray) {
   let maiorNumero = numerosArray[0];
   let numeroRepete = 0;
@@ -38,11 +37,7 @@ function highestCount(numerosArray) {
   for (let i = 0; i <= numerosArray.lenght; i += 1) {
     if (numerosArray[i] > maiorNumero) {
       maiorNumero = numerosArray[i];
-    }
-  }
-
-  for (let i = 0; i <= numerosArray.lenght; i += 1) {
-    if (maiorNumero === numerosArray[i]) {
+    } else if (numerosArray[i] > maiorNumero && maiorNumero === numerosArray[i]) {
       numeroRepete += 1;
     }
   }
